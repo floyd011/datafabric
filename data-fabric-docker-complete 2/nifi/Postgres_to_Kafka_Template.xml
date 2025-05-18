@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<template encoding-version="1.2">
+  <name>Postgres_to_Kafka</name>
+  <description>Primer flow-a: PostgreSQL → Kafka</description>
+  <snippet>
+    <processors>
+      <processor>
+        <id>dbcp</id>
+        <name>DBCPConnectionPool</name>
+        <class>org.apache.nifi.dbcp.DBCPConnectionPool</class>
+      </processor>
+      <processor>
+        <id>query</id>
+        <name>ExecuteSQL</name>
+        <class>org.apache.nifi.processors.standard.ExecuteSQL</class>
+      </processor>
+      <processor>
+        <id>convert</id>
+        <name>ConvertAvroToJSON</name>
+        <class>org.apache.nifi.processors.avro.ConvertAvroToJSON</class>
+      </processor>
+      <processor>
+        <id>kafka</id>
+        <name>PublishKafka</name>
+        <class>org.apache.nifi.processors.kafka.pubsub.PublishKafka</class>
+      </processor>
+    </processors>
+  </snippet>
+</template>
