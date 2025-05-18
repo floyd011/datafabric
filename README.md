@@ -98,6 +98,4 @@ We’ve prepared a fully dockerized Data Fabric starter kit, including:
 You can use this architecture locally or extend it to Kubernetes (Helm support coming soon).
 
 **Want to dive in?**  
-Drop a comment or DM — happy to share the GitHub repo and help you build your own data fabric journey.
-
-#DataEngineering #ApacheAtlas #ApacheNiFi #DataFabric #DataLineage #MetadataManagement #Kafka #Trino #OpenSource #ETL #Governance
+Drop a comment or DM — happy to share the GitHub repo and help you build your own data fabric journey [Milorad Spasic](https://wwww.linkedin.com/in/milorad-spasic)
